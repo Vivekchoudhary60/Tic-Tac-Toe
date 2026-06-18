@@ -1,0 +1,243 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+ 
+
+h1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+body {
+    background-color: #BFDDF0;
+
+}
+
+
+.container-msg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.msg {
+    font-size: 35px;
+    color: #3b362f;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.New-Game {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5vh 44vw 0;
+    min-width: 153px;
+    height: 47px;
+
+}
+
+.show-Game {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5vh 44vw 0;
+    min-width: 153.5px;
+    height: 47px;
+}
+
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+
+}
+
+.game {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.box {
+    background-color: #FFEBCC;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 15px black;
+    width: 100px;
+    font-size: 60px;
+    height: 100px;
+    color: #8CC0EB;
+    cursor: pointer;
+}
+
+
+.resetbtn {
+    width: 15vw;
+    color: #8CC0EB;
+    background-color: #FFEBCC;
+    border: 3px solid #8CC0EB;
+    border-radius: 5px;
+    margin: 40px 42vw;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f8fafc;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #38bdf8;
+    text-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+.msg {
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #7dd3fc;
+}
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 330px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 20px;
+    background: #1e293b;
+    color: #38bdf8;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover {
+    background: #334155;
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.4);
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+.resetbtn,
+.show-Game,
+.New-Game {
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
+}
+
+.resetbtn:hover,
+.show-Game:hover,
+.New-Game:hover {
+    background: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .game {
+        width: 280px;
+        height: 280px;
+        gap: 10px;
+    }
+
+    .box {
+        width: 75px;
+        height: 75px;
+        font-size: 2rem;
+    }
+}
+
+.hide {
+    display: none;
+}
